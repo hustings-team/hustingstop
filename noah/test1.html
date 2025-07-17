@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/testn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="/images/agree/RYG.svg"
+        alt="RYG"
+        style="
+          z-index: 10;
+          position: absolute;
+          left: 2%;
+          top: 2%;
+          display: block;
+          width: 5%;
+          height: auto;
+        "
+      />
+      <img src="/images/index/test1back.svg" alt="back" style="height: 100%" />
+      <!边栏按键>
+      <img
+        src="/images/index/testpic.svg"
+        alt="testpic"
+        style="
+          position: absolute;
+          left: 5%;
+          top: 23%;
+          display: block;
+          width: 3%;
+        "
+      />
+      <img
+        class="a"
+        src="/images/index/test.svg"
+        alt="test"
+        style="
+          position: absolute;
+          left: 3.5%;
+          top: 23%;
+          display: block;
+          width: 14%;
+          cursor: pointer;
+        "
+        onclick="window.location.href='index.html'"
+      />
+      <img
+        class="a"
+        src="/images/index/result.svg"
+        alt="test"
+        style="
+          position: absolute;
+          left: 5%;
+          top: 52%;
+          display: block;
+          width: 10%;
+          cursor: pointer;
+        "
+        onclick="window.location.href='record.html'"
+      />
+      <div
+        class="test a"
+        style="font-size: 1.3vw; left: 5%; top: 30%; cursor: pointer"
+        onclick="window.location.href='test1.html'"
+      >
+        待做测试一
+      </div>
+      <div
+        class="test a"
+        style="font-size: 1.3vw; left: 5%; top: 36%; cursor: pointer"
+        onclick="window.location.href='test2.html'"
+      >
+        待做测试二
+      </div>
+      <div
+        class="test a"
+        style="font-size: 1.3vw; left: 5%; top: 42%; cursor: pointer"
+        onclick="window.location.href='test3.html'"
+      >
+        待做测试三
+      </div>
+      <img
+        class="a"
+        src="/images/index/signout.svg"
+        alt="test"
+        style="
+          position: absolute;
+          left: 7%;
+          top: 89.5%;
+          display: block;
+          width: 2.3%;
+          cursor: pointer;
+        "
+        onclick="window.location.href='signin.html'"
+      />
+      <!主页面>
+      <img
+        src="/images/index/testsign.svg"
+        style="position: absolute; left: 21%; top: 7%; width: 7%; height: auto"
+      />
+      <div
+        style="
+          position: absolute;
+          top: 9%;
+          left: 28%;
+          font-weight: 600;
+          color: #000;
+          font-size: 4vh;
+        "
+      >
+        待做测试一
+      </div>
+
+      <div
+        style="
+          color: #000;
+          font-size: 1vw;
+          left: 24%;
+          top: 16.5%;
+          position: absolute;
+          font-weight: 500;
+        "
+      >
+        发布日期：
+      </div>
+      <div
+        style="
+          color: #000;
+          font-size: 1vw;
+          left: 30%;
+          top: 16.5%;
+          position: absolute;
+          font-weight: 500;
+        "
+      >
+        2025-07-20
+      </div>
+      <div
+        style="
+          color: #000;
+          font-size: 1vw;
+          left: 41%;
+          top: 16.5%;
+          position: absolute;
+          font-weight: 500;
+        "
+      >
+        截止日期：
+      </div>
+      <div
+        style="
+          color: #000;
+          font-size: 1vw;
+          left: 47%;
+          top: 16.5%;
+          position: absolute;
+          font-weight: 500;
+        "
+      >
+        2025-07-30
+      </div>
+
+      <div
+        style="
+          color: #000;
+          font-size: 1.4vw;
+          left: 27%;
+          top: 30%;
+          position: absolute;
+          font-weight: 400;
+        "
+      >
+        待做测试一
+      </div>
+      <div
+        style="
+          color: #000;
+          font-size: 1.4vw;
+          left: 50%;
+          top: 30%;
+          position: absolute;
+          font-weight: 400;
+        "
+      >
+        20
+      </div>
+
+      <div>
+        <img
+          src="/images/index/start.svg"
+          alt="开始答题"
+          class="b"
+          style="
+            position: absolute;
+            left: 50%;
+            top: 46%;
+            display: block;
+            width: 18%;
+            cursor: pointer;
+          "
+          onclick="startTest(1)"
+        />
+        <div
+          style="
+            position: absolute;
+            top: 46.5%;
+            left: 54.5%;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            font-size: 3vh;
+            cursor: pointer;
+          "
+          onclick="startTest(1)"
+        >
+          开始答题
+        </div>
+      </div>
+    </div>
+    <script>
+      function startTest(testId) {
+        window.location.href = `agree.html?test=${testId}`;
+      }
+    </script>
+  </body>
+</html>
